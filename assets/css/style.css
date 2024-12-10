@@ -21,9 +21,7 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    line-height: 1.6;
     color: var(--text-color);
-    background-color: lightgrey;
 }
 
 .btn {
@@ -36,6 +34,10 @@ body {
     width: 180px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: all 0.5s ease-in;
+}
+
+h1, h2 {
+    font-family: "Playflair Display", serif;
 }
 
 /* Header */
@@ -131,3 +133,39 @@ nav a:hover {
 .hero .btn:hover {
     background-color: var(--secondary-color);
 }
+
+/* Sobre */
+
+#sobre {
+    background-color: var(--secondary-color);
+    padding: 3rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.left img {
+    width: 400px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.right p {
+    text-align: justify;
+    font-size: 20px;
+    width: 80%;
+}
+
+.right h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
