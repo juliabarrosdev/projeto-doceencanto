@@ -14,6 +14,7 @@
     --background-color: #FADADD;
     --text-color: #333;
     --text-color2: #8B8B8B;
+    --text-color3: #fff;
     --primary-color: #C67B8F;
     --secondary-color: #CADBE1;
 }
@@ -23,6 +24,18 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: lightgrey;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: medium;
+    width: 180px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease-in;
 }
 
 /* Header */
@@ -72,3 +85,49 @@ nav a:hover {
     color: var(--primary-color);
 }
 
+/* Hero */
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--text-color);
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6); 
+    z-index: 1;
+}
+
+.hero .content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    color: var(--text-color1);
+    z-index: -9;
+}
+
+.hero .btn:hover {
+    background-color: var(--secondary-color);
+}
